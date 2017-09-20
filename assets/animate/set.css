@@ -26,7 +26,6 @@
 .grid figure figcaption {
 	padding: 2em;
 	color: #fff;
-	text-transform: uppercase;
 	font-size: 1.25em;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
@@ -629,6 +628,7 @@ figure.effect-oscar h2 {
 }
 
 figure.effect-oscar figcaption::before,
+figure.effect-oscar h2,
 figure.effect-oscar p {
 	opacity: 0;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -638,6 +638,7 @@ figure.effect-oscar p {
 }
 
 figure.effect-oscar:hover h2 {
+	opacity: 1;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
